@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="User.css" rel="stylesheet">
+    <title>Home page</title>
+    </head>
+    <body>
+        <!--navigation bar-->
+        <div class="nav"> 
+            <div class="nav-header">
+              <div class="nav-title">
+                USER MANAGEMENT
+              </div>
+            </div>
+          </div>
+         <!--search section and add user-->
+         
+          <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="search">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+           
+         
+          <div class="submit"><button type="submit" id="myBtn" >ADDUSER </button></div>
+          
+    
+            <!-- <button id="myBtn">Create User</button> -->
+           
+          </div>
+          <div class="container" id="box">
+                <div class="User-box" id="table">
+            <p>firstname</p>
+            <p>lastname</p>
+            <p>Place</p>
+          </div>
+        </div>
+
+        <div class="container" id="box">
+            <div class="User-box" id="table">
+        <p>firstname</p>
+        <p>lastname</p>
+        <p>Place</p>
+      </div>
+    </div>
+
+    <div class="container" id="box">
+        <div class="User-box" id="table">
+    <p>firstname</p>
+    <p>lastname</p>
+    <p>Place</p>
+  </div>
+</div>
+          <div id="myModal" class="modal">
+    
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="container"> 
+                <img src="img_avatar2.png" class="img">
+            <center> <h1> ADD DETAILS </h1> </center> 
+            
+            
+            <form name="myform" method="post"  onsubmit="validateform()" >  
+                First Name: <input type="text" name="firstname"><br/>
+                Last Name<input type="text" name="lastname"><br/>
+                Place<input type="text" name="place"><br/>
+                <input type="submit" value="register">  
+      
+                </form> 
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <!-- end -->
+        <script src="User.js"></script>
+        </body>
+        </html>
